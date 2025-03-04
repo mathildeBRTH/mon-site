@@ -393,6 +393,17 @@ header {
 
 /* _______RESPONSIVE_______ */
 
+@media (max-width: 342px) {
+    .MB {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 270px) {
+    .MB {
+        font-size: 1.5rem;
+    }
+}
+
 @media (min-width: 768px) {
     header {
         display: flex;
