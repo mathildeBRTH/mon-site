@@ -7,7 +7,7 @@ const languageToggle = document.getElementById('language-toggle');
 async function loadLanguage(lang) {
   // Charge le fichier JSON correspondant à la langue
   try {
-    const response = await fetch(`/lang/${lang}.json`);
+    const response = await fetch(`/mon-site/lang/${lang}.json`);
     if (!response.ok) throw new Error('Fichier JSON non trouvé');
     const texts = await response.json();
     updateTexts(texts); // Met à jour les textes de la page
