@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    padding: 1%;
+    margin: 1% 0;
+
+    &:hover {
+      background-color: silver;
+    }
+
+    &.selected {
+      background-color: rgb(182, 94, 204);
+    }
+  }
+
+  img {
+    display: block;
+    /* Sinon il y a un petit gap sous l'image */
+  }
+}
+
+#total span {
+  color: rgb(182, 94, 204);
+  font-weight: bold;
+  font-style: italic;
+}
