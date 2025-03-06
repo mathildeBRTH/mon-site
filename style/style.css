@@ -370,6 +370,7 @@ header {
 .carousel-item img {
     width: 70%;
     height: auto;
+    max-width: 400px;
     margin: auto;
     cursor: pointer;
 }
@@ -482,6 +483,14 @@ header {
                 margin: auto;
             }
         }
+    }
+    #prev1,
+    #prev2 {
+        left: 100px;
+    }
+    #next1,
+    #next2 {
+        right: 100px;
     }
 }
 
