@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Botega - Signer le Livre d'Or</title>
+    <link rel="icon" href="food-pizza_115113.ico">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="nav-bis">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../style/assets/icon/house-solid-red.svg" alt="">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="./carte.html">
+                        <img src="../style/assets/icon/utensils-solid-red.svg" alt="">
+                        Notre carte
+                    </a>
+                </li>
+                <li>
+                    <a href="./avis.html">
+                        <img src="../style/assets/icon/book-solid-red.svg" alt="">
+                        Livre d'or
+                    </a>
+                </li>
+                <li>
+                    <a href="./apropos.html">
+                        <img src="../style/assets/icon/user-solid-red.svg" alt="">
+                        Qui sommes-nous ?
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        <img src="../style/assets/icon/envelope-solid-red.svg" alt="">
+                        Nous contacter
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="entete">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="../style/assets/img/banner.jpg">
+                <source media="(min-width: 768px)" srcset="../style/assets/img/banner-tablette.jpg">
+                <img src="../style/assets/img/banner-mobile.jpg" alt="">
+            </picture>
+        </section>
+    </header>
+
+    <main>
+        <section class="bis container">
+            <h2>Signer le livre d'or</h2>
+            <p>Votre avis au sujet de la <strong>pizzéria La Botega</strong> sera publié après validation par le modérateur du site</p>
+    
+            <form id="avis-client">
+                <p><span class="obligatoire">(*)</span> Champs obligatoires</p>
+                <div>
+                    <label for="sujet">Titre <span class="obligatoire">*</span></label>
+                    <input name="sujet" id="sujet" type="text" placeholder="Parfait !!!" required maxlength="20" required>
+                </div>
+                <div>
+                    <label for="nom">Votre nom <span class="obligatoire">*</span></label>
+                    <input name="nom" id="nom" type="text" placeholder="John Smith" required maxlength="100">
+                </div>
+                <div>
+                    <label for="email">Votre email <span class="obligatoire">*</span></label>
+                    <input name="email" id="email" type="email" placeholder="j.smith@email.com" required maxlength="150">
+                </div>
+                <fieldset id="cadre-note">
+                    <legend>Votre note <span class="obligatoire">*</span></legend>
+
+                    <div class="rating">
+                        <label>
+                            <input type="radio" name="star-rating" value="1" />
+                            <span>★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="star-rating" value="2" />
+                            <span>★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="star-rating" value="3" />
+                            <span>★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="star-rating" value="4" />
+                            <span>★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="star-rating" value="5" />
+                            <span>★</span>
+                        </label>
+                      </div>
+                    
+                </fieldset>
+                <div>
+                    <label for="message">Votre avis <span class="obligatoire">*</span></label>
+                    <textarea name="message" id="message" placeholder="..." required minlength="20" maxlength="1000"></textarea>
+                </div>
+                <div>
+                    <input name="checkbox" id="checkbox" type="checkbox" placeholder="" required>
+                    <label for="checkbox"><span class="obligatoire">*</span> En soumettant cet avis, j'accepte la <a href="./rgpd.html">politique de confidentialité</a> du site ; j'accepte que cette publication soit lisible avec mon nom, ma note et la date sur la page du livre d'or.</label>
+                </div>
+                <div id="envoyer">
+                    <button>
+                        <img src="../style/assets/icon/paper-plane-solid.svg" alt="icone envoyer">
+                        Envoyer
+                    </button>
+                </div>
+            </form>
+            
+
+        </section>
+
+    </main>
+
+    <footer class="red">
+        <nav>
+            <div class="flex-responsive">
+                <section class="navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="./carte.html">Notre carte</a></li>
+                        <li><a href="./avis.html">Livre d'or</a></li>
+                        <li><a href="./ecrire-avis.html" class="vous-êtes-ici-nav-2">Nous laisser un avis</a></li>
+                        <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+                        <li><a href="./contact.html">Nous contacter</a></li>
+                        <li><a href="./mentions.html">Mention légales</a></li>
+                        <li><a href="./rgpd.html">Politique de confidentialité</a></li>
+                    </ul>
+                </section>
+                <section class="reseaux">
+                    <h4>Retrouvez-nous sur</h4>
+                    <ul>
+                        <li><a href=""><img src="../style/assets/icon/square-facebook-brands-solid.svg" alt=""></a></li>
+                        <li><a href=""><img src="../style/assets/icon/square-x-twitter-brands-solid.svg" alt=""></a></li>
+                        <li><a href=""><img src="../style/assets/icon/square-youtube-brands-solid.svg" alt=""></a></li>
+                    </ul>
+                </section>
+                <section class="paiement">
+                    <h4>Méthode de paiement</h4>
+                    <ul>
+                        <li>
+                            <img src="../style/assets/icon/money-bill-solid.svg" alt=""> Espèces
+                        </li>
+                        <li>
+                            <img src="../style/assets/icon/ticket-solid.svg" alt=""> Tickets restaurant</li>
+                        <li>
+                            <img src="../style/assets/icon/credit-card-solid.svg" alt=""> Cartes de crédit</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <section class="bas">
+                <p>© 2024 Pizzéria La Botega - Tous droits réservés - Site réalisé par les étudiants OnlineFormapro</p>
+                <a href="#top"><img src="../style/assets/icon/circle-chevron-up-solid.svg" alt=""></a>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>

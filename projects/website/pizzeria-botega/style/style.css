@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url(../style/assets/font/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Original Surfer';
+    src: url(../style/assets/font/OriginalSurfer-Regular.ttf);
+}
+
+:root {
+    --primary-color: rgb(184, 9, 9);
+    --secondary-color: rgb(31, 173, 31);
+    --hyperlink: #00c;
+    --text: #555555;
+    --third-color: gold;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-family: 'Mulish';
+    font-size: 1rem;
+    line-height: 1.5;
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+hgroup,
+h2,
+h3,
+h4 {
+    font-family: 'Original Surfer';
+    text-align: center;
+    line-height: normal;
+}
+
+hgroup,
+h4 {
+    color: #fff;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+.red {
+    background-color: var(--primary-color);
+}
+
+header {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../style/assets/img/background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    nav {
+        font-weight: bold;
+        background-color: #ffffff2c;
+        text-align: center;
+        a {
+            color: #fff;
+            img {
+                width: 1rem;
+            }
+        }
+        li {
+            padding: 0.75rem;
+        }
+        a:hover {
+            color: var(--secondary-color);
+        }
+    }
+    hgroup {
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    
+}
+
+main {
+    font-size : 0.75rem;
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    
+    .presentation {
+        margin-bottom: 1.5rem;
+        #mario {
+            text-align: right;
+            font-style: italic;
+        }
+    }
+
+    .offre {
+        padding: 2rem;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        img {
+            width: 2rem;
+        }
+    }
+
+    .carte {
+        text-align: center;
+        div {
+            margin: 2rem 0;
+        }
+        h2 {
+            margin: 2.5rem;
+        }
+        figure {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            figcaption {
+                padding: 1rem;
+            }
+        }
+        button {
+            width: 100%;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            padding: 0.5rem;
+            transition-duration: 2s;
+            img {
+                width: 0.75rem;
+            }
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: var(--third-color);
+        }
+    }
+}
+
+footer {
+    padding: 0 2rem;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 0.75rem;
+    h4 {
+        font-size: 1rem;
+    }
+    nav {
+        .navigation {
+            a {
+                color: #fff;
+                font-size: 0.75rem;
+            }
+            a:hover {
+                color: var(--third-color);
+            }
+        }
+        .reseaux {
+            ul {
+                display: flex;
+                li {
+                    margin: 0.25rem;
+                }
+            }
+            img {
+                width: 1.5rem;
+            }
+        }
+        .paiement {
+            img {
+                width: 1rem;
+            }
+        }
+    }
+    .bas {
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        img {
+            width: 1.5rem;
+            position: absolute;
+            bottom: 10%;
+            right: -5%;
+        }
+    }
+}
+
+.nav-bis {
+    a {
+        color: var(--primary-color);
+    }
+    background: none;
+    min-height: auto;
+}
+
+.bis {
+    margin-bottom: 2rem;
+    h3,
+    h4 {
+        color: var(--primary-color);
+        text-align: left;
+    }
+    a {
+        color: var(--hyperlink);
+    }
+    address {
+        font-style: normal;
+    }
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table {
+    margin-bottom: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    td, 
+    th {
+        border: 2px dotted #dfd7d7;
+        padding: 0.5rem;
+    }
+    tr:nth-child(odd) {
+        background-color: #f3ecec;
+    }
+    th {
+        background-color: white;
+    }
+}
+
+.titre-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.mentions {
+    img {
+        width: 0.75rem;
+    }
+}
+
+.livre {
+
+    button {
+        transition-duration: 2s;
+        width: 100%;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+        img {
+            width: 0.75rem;
+        }
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+    img {
+        width: 1rem;
+    }
+    .note {
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .nom {
+        color: var(--secondary-color);
+    }
+    .date-publication {
+        font-size: 0.5rem;
+    }
+}
+
+#avis-client,
+#form-contact,
+.contact .news {
+    display :flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    #nom,
+    #email,
+    #cadre-note,
+    #sujet,
+    #message,
+    #email-bis {
+        border: 1px solid #dfd7d7;
+        border-radius: 7px;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+
+    #cadre-note {
+        padding-bottom: 1.5rem;
+    }
+
+    .rating {
+        span {
+            font-size: 1.5rem;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        label {
+        position: relative;
+        color: grey;
+        padding: 0 0.25rem;
+        transition: color 0.15s;
+        }
+        label:has(input:focus-visible) {
+            outline-offset: 1px;
+            outline: goldenrod 2px;
+        }
+        label:has(~ label > input:checked),
+        label:has(input:checked) {
+        color: var(--third-color);
+        }
+        label:has(~ label > input:hover),
+        label:has(input:hover) {
+        color: var(--third-color);
+        }
+        label:has(input:active) {
+            color: var(--third-color);
+          }
+    }
+
+    button,
+    .button {
+        margin: 1rem 0;
+        transition-duration: 2s;
+        width: 100%;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+        img {
+            width: 0.75rem;
+        }
+    }
+    button:hover,
+    .button:hover {
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+    img {
+        width: 1rem;
+    }
+    #message {
+        min-height: 5rem;
+    }
+    label,
+    legend {
+        font-weight: bold;
+        padding: 0.5%;
+    }
+    .obligatoire {
+        color: var(--primary-color);
+    }
+}
+
+.contact {
+    img {
+        width: 0.75rem;
+    }
+}
+
+.news {
+    .button {
+        margin: 1rem 0;
+        transition-duration: 2s;
+        width: 100%;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+        img {
+            width: 0.75rem;
+        }
+    }
+    .button:hover {
+        cursor: pointer;
+        background-color: var(--third-color);
+    }
+}
+
+.horraires {
+    li {
+        list-style: disc;
+        margin-left: 2rem;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.vous-êtes-ici-nav-1 {
+    color: var(--secondary-color) !important;
+}
+
+.vous-êtes-ici-nav-2 {
+    color: var(--third-color) !important;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1024px) {
+
+    header {
+        background-image: url(../style/assets/img/background.jpg);
+        ul {
+            display: flex;
+            justify-content: space-around;
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #titre-principal {
+            h1 {
+                font-size: 3rem;
+            }
+            margin-top: 10rem;
+        }
+    }
+    
+    main,
+    footer {
+        width: 100%;
+    }
+
+    main {
+        font-size: 1rem;
+        h2 {
+            font-size: 2.6rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+        .flex-responsive {
+            display: flex;
+            div {
+                margin: 1rem;
+            }
+        }
+        .titre-carte {
+            img {
+                width: 2rem;
+            }
+        }
+        .livre p .date-publication {
+            font-size: 0.75rem;
+        }
+        .flex-contact {
+            display: flex;
+            .coordonnées-form {
+                width: 50%;
+            }
+            div {
+                margin: 0 1rem;
+            }
+        }
+        .mentions {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    footer {
+        .flex-responsive {
+            display: flex;
+            div {
+                margin: 1rem;
+            }
+        }
+        div {
+            justify-content: space-around;
+        }
+        .bas {
+            a {
+                position: absolute;
+                right: 5%;
+            }
+        }
+    }
+}
