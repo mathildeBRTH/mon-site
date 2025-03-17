@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Botega - Contact</title>
+    <link rel="icon" href="food-pizza_115113.ico">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="nav-bis">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../style/assets/icon/house-solid-red.svg" alt="">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="./carte.html">
+                        <img src="../style/assets/icon/utensils-solid-red.svg" alt="">
+                        Notre carte
+                    </a>
+                </li>
+                <li>
+                    <a href="./avis.html">
+                        <img src="../style/assets/icon/book-solid-red.svg" alt="">
+                        Livre d'or
+                    </a>
+                </li>
+                <li>
+                    <a href="./apropos.html">
+                        <img src="../style/assets/icon/user-solid-red.svg" alt="">
+                        Qui sommes-nous ?
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="vous-êtes-ici-nav-1">
+                        <img src="../style/assets/icon/envelope-solid-green.svg" alt="">
+                        Nous contacter
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="entete">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="../style/assets/img/banner.jpg">
+                <source media="(min-width: 768px)" srcset="../style/assets/img/banner-tablette.jpg">
+                <img src="../style/assets/img/banner-mobile.jpg" alt="">
+            </picture>
+        </section>
+    </header>
+
+    <main>
+        <section class="bis container contact">
+            <h2>Nous contacter</h2>
+            <div class="flex-contact">
+                <div class="coordonnées-form">
+                    <h3>Nos coordonnées</h3>
+                    <address>
+                        <img src="../style/assets/icon/location-dot-solid.svg" alt="">
+                        77, rue d'Ermont
+                        <br>
+                        95390 Saint-Prix
+                    </address>
+                    <p>
+                        <img src="../style/assets/icon/envelope-solid-bis.svg" alt="">
+                        Email : 
+                        <a href="mailto:info@labottega.fr">info@labottega.fr</a>
+                    </p>
+                    <p>
+                        <img src="../style/assets/icon/phone-solid.svg" alt="">
+                        Téléphone : 
+                        <a href="tel:+33134279866">01 34 27 98 66</a>
+                    </p>
+                    <p>Vous pouvez aussi remplir le formulaire ci-dessous.</p>
+        
+                    <form id="form-contact">
+                        <p><span class="obligatoire">(*)</span> Champs obligatoires</p>
+                        
+                        <div>
+                            <label for="nom">Nom <span class="obligatoire">*</span></label>
+                            <input name="nom" id="nom" type="text" placeholder="Votre nom" required maxlength="100">
+                        </div>
+                        <div>
+                            <label for="email">Email <span class="obligatoire">*</span></label>
+                            <input name="email" id="email" type="email" placeholder="Votre adresse mail" required maxlength="150">
+                        </div>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input name="tel" id="sujet" type="tel" placeholder="Votre numéro de téléphone" maxlength="20">
+                        </div>
+                        <div>
+                            <label for="sujet">Sujet <span class="obligatoire">*</span></label>
+                            <input name="sujet" id="sujet" type="text" placeholder="Le sujet de votre demande" required maxlength="20" required>
+                        </div>
+                        <div>
+                            <label for="message">Message <span class="obligatoire">*</span></label>
+                            <textarea name="message" id="message" placeholder="Entrez ici votre message" required minlength="20" maxlength="1000"></textarea>
+                        </div>
+                        <div>
+                            <input name="checkbox" id="checkbox" type="checkbox" placeholder="" required>
+                            <label for="checkbox"> <span class="obligatoire">*</span> En soumettant cet avis, j'accepte la <a href="./rgpd.html">politique de confidentialité</a> du site ; j'accepte que cette publication soit lisible avec mon nom, ma note et la date sur la page du livre d'or.</label>
+                        </div>
+                        <div id="envoyer">
+                            <button>
+                                <img src="../style/assets/icon/paper-plane-solid.svg" alt="icone envoyer">
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+    
+                <aside>
+                    <div class="news">
+                        <h3>Newsletter</h3>
+                        <p>Pour recevoir les actualités, abonnez-vous à notre newsletter !</p>
+                        <input name="email" id="email-bis" type="email" placeholder="Votre email" required maxlength="150">
+                        <input type="submit" value="Abonnement" class="button">
+                    </div>
+    
+                    <h3>Heures d'ouvertures</h3>
+                    <ul class="horraires">
+                        <li>Lundi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Mardi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Mercredi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Jeudi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Vendredi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Samedi : de 12h à 14h et de 19h à 23h</li>
+                        <li>Dimanche : de 19h à 23h</li>
+                    </ul>
+                
+                    <h3>Plan d'accès</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.3807601463286!2d2.257910676857911!3d49.0033406904945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66796af775fff%3A0xb6c7fc70d5447ecf!2s77%20Rue%20d&#39;Ermont%2C%2095390%20Saint-Prix!5e0!3m2!1sfr!2sfr!4v1739278316468!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="red">
+        <nav>
+            <div class="flex-responsive">
+                <section class="navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="./carte.html">Notre carte</a></li>
+                        <li><a href="./avis.html">Livre d'or</a></li>
+                        <li><a href="./ecrire-avis.html">Nous laisser un avis</a></li>
+                        <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+                        <li><a href="./contact.html" class="vous-êtes-ici-nav-2">Nous contacter</a></li>
+                        <li><a href="./mentions.html">Mention légales</a></li>
+                        <li><a href="./rgpd.html">Politique de confidentialité</a></li>
+                    </ul>
+                </section>
+                <section class="reseaux">
+                    <h4>Retrouvez-nous sur</h4>
+                    <ul>
+                        <li><a href=""><img src="../style/assets/icon/square-facebook-brands-solid.svg" alt=""></a></li>
+                        <li><a href=""><img src="../style/assets/icon/square-x-twitter-brands-solid.svg" alt=""></a></li>
+                        <li><a href=""><img src="../style/assets/icon/square-youtube-brands-solid.svg" alt=""></a></li>
+                    </ul>
+                </section>
+                <section class="paiement">
+                    <h4>Méthode de paiement</h4>
+                    <ul>
+                        <li>
+                            <img src="../style/assets/icon/money-bill-solid.svg" alt=""> Espèces
+                        </li>
+                        <li>
+                            <img src="../style/assets/icon/ticket-solid.svg" alt=""> Tickets restaurant</li>
+                        <li>
+                            <img src="../style/assets/icon/credit-card-solid.svg" alt=""> Cartes de crédit</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <section class="bas">
+                <p>© 2024 Pizzéria La Botega - Tous droits réservés - Site réalisé par les étudiants OnlineFormapro</p>
+                <a href="#top"><img src="../style/assets/icon/circle-chevron-up-solid.svg" alt=""></a>
+            </section>
+        </nav>
+    </footer>
+</body>
+</html>
