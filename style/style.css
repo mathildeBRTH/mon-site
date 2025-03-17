@@ -494,7 +494,7 @@ header {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
     header {
         nav.nav-bis {
@@ -539,39 +539,52 @@ header {
         }
     }
     main.cv {
-        position: relative;
-        margin-top: 2rem;
+        margin: auto;
+        max-width: 80%;
         display: grid;
-        grid-template: 1fr / 1fr 1fr 1fr 1fr;
-        section {
-            margin: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 20% 1fr;
+        grid-template-areas: 
+            "lg lg lg"
+            "s . sk"
+            "t t t"
+            "p h h";
+        gap: 1rem;
+    }
+    main.cv .languages {
+        grid-area: lg;
+        width: 70%;
+        margin: 3rem auto;
+    }
+    main.cv .skills {
+        grid-area: s;
+    }
+    main.cv .soft-skills {
+        grid-area: sk;
+    }
+    main.cv .pro {
+        grid-area: p;
+    }
+    main.cv .train {
+        grid-area: t;
+    }
+    main.cv .hobbies {
+        grid-area: h;
+    }
+    main.cv section {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    main.cv section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 0;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        li {
+            max-width: 300px;
         }
-        .cv-bottom {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            right: 5%;
-            grid-template: 1fr 1fr / 20% 1fr 1fr 20%;
-            grid-template-areas: 
-            ". . . tr"
-            ". pr ho tr";
-        }
-    }
-    footer.cv-footer {
-        position: absolute;
-        bottom: -140%;
-        left: 15%;
-    }
-}
-
-@media (min-width: 1500px) {
-    footer.cv-footer {
-        left: 20%;
-    }
-}
-
-@media (min-width: 1750px) {
-    footer.cv-footer {
-        left: 22%;
     }
 }
