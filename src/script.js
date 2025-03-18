@@ -139,3 +139,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// _________up btn show on scroll_______
+
+const upBtn = document.getElementById('up-btn');
+
+let scrollFunc = function () {
+  let y = window.scrollY;
+  if (y >= 400) {
+    upBtn.className = 'show-up-btn'
+  } else {
+    upBtn.className = 'hide-up-btn'
+  }
+};
+
+window.addEventListener("scroll", scrollFunc);
