@@ -27,6 +27,28 @@ function updateTexts(texts) {
   })
 };
 
+// Fonction pour mettre à jour les liens des PDF en fonction de la langue
+function updatePDFLinks(lang) {
+  const frCV = "../style/contents/pdf/BERTHELIER-Mathilde-CV-fr.pdf";
+  const enCV = "../style/contents/pdf/BERTHELIER-Mathilde-CV-en.pdf";
+
+  const frCL = "../style/contents/pdf/BERTHELIER-Mathilde-LM-fr.pdf";
+  const enCL = "../style/contents/pdf/BERTHELIER-Mathilde-CL-en.pdf";
+
+  const frRL = "../style/contents/pdf/BERTHELIER-Mathilde-LR-fr.pdf";
+  const enRL = "../style/contents/pdf/BERTHELIER-Mathilde-RL-en.pdf";
+
+  if (lang === 'fr') {
+    document.getElementById("dlCV").href = frCV;
+    document.getElementById("dlCL").href = frCL;
+    document.getElementById("dlRL").href = frRL;
+  } else {
+    document.getElementById("dlCV").href = enCV;
+    document.getElementById("dlCL").href = enCL;
+    document.getElementById("dlRL").href = enRL;
+  }
+}
+
 // Écouteur d'événement pour le bouton de changement de langue
 languageToggle.addEventListener('click', () => {
   const currentLang = document.documentElement.lang; // Récupère la langue actuelle
@@ -39,8 +61,10 @@ languageToggle.addEventListener('click', () => {
 
   // Sauvegarde la langue choisie dans le localStorage
   localStorage.setItem('language', newLang);
+  
+  // Appel de la fonction pour mettre à jour les PDF
+  updatePDFLinks(newLang);
 });
-
 
 // Charge la langue par défaut au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Met à jour le texte du bouton en fonction de la langue
   languageToggle.textContent = savedLang === 'fr' ? 'EN' : 'FR';
+  
+  // Appel de la fonction pour mettre à jour les PDF
+  updatePDFLinks(savedLang);
 });
 
 // _________light/dark theme button_______
