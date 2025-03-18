@@ -207,7 +207,14 @@ footer {
             width: 1.5rem;
             height: auto;
             fill: var(--secondary-color);
+            margin: 0;
         }
+    }
+    .show-up-btn {
+        display: block;
+    }
+    .hide-up-btn {
+        display: none;
     }
 }
 
