@@ -1,0 +1,53 @@
+.text-about {
+    h2 {
+        text-transform: uppercase;
+    }
+}
+.dl-container {
+    margin-top: 5rem;
+    div {
+        max-width: 265px;
+    }
+}
+.bt-download {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 20px;
+    background-color: vars.$secondary-color;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: vars.$primary-color;
+    }
+    svg {
+        fill: vars.$primary-color;
+        min-width: 1rem;
+        max-width: 2rem;
+        height: auto;
+        margin-left: 0.5rem;
+    }
+}
+.bt-download:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 10px vars.$secondary-color;
+}
+.cv {
+    section {
+        padding: 2rem;
+        max-width: 15rem;
+        margin: 1rem 0;
+        h3 {
+            text-align: center;
+        }
+        ul {
+            margin: 0;
+            padding-left: 1rem;
+            li {
+                margin-bottom: 0.5rem;
+                color: vars.$text-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow-x: scroll;
+    text-align: center;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    img {
+        width: 70%;
+        height: auto;
+        max-width: 400px;
+        margin: auto;
+        cursor: pointer;
+    }
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    svg {
+        width: 1rem;
+        fill: vars.$secondary-color;
+    }
+}
+.carousel-button.prev {
+    left: 10px;
+}
+.carousel-button.next {
+    right: 10px;
+}
+#carousel3 {
+    margin-top: 3rem;
+    img{
+        border-radius: 40px;
+    }
+}

@@ -1,0 +1,13 @@
+// Import des utilitaires
+@use 'utilities/variables' as vars;
+@use 'utilities/global';
+@use 'utilities/responsive';
+// Import des composants
+@use 'components/header';
+@use 'components/footer';
+@use 'components/carousel';
+@use 'components/cards';
+@use 'components/buttons';
+// Import des pages
+@use 'pages/home';
+@use 'pages/cv';

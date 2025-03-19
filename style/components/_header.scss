@@ -1,0 +1,98 @@
+/* ___about me___ */
+header {
+    margin: 2rem 0 2rem 2rem;
+    section {
+        width: 90%;
+        padding: 1rem;
+    }
+    hgroup {
+        font-weight: bold;
+        h1, h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+    }
+    p {
+        font-size: 1.3rem;
+        color: vars.$text-color;
+        margin-bottom: 2rem;
+    } 
+    .text-about {
+        padding: 2rem;
+    }
+    #QRcode {
+        width: 100%;
+        padding: 3rem;
+        border-radius: 100px;
+    }
+    #pic-pro,
+    #pic-profile {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            padding: 0.5rem;
+        }
+    #pic-pro:hover,
+    #pic-profile:hover {
+        cursor: pointer;
+        scale: 1.1;
+    }
+    #original-image-container,
+    #original-image-container-bis {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        .big-pic {
+            width: 100%;
+        }
+    }      
+}
+/* ___nav bis___ */
+header {
+    .nav-bis {
+        button {
+            svg {
+                fill: vars.$secondary-color;
+                width: 1rem;
+            }
+        }
+        .bt-home {
+            position: fixed;
+            left: 2rem;
+            top: 1rem;
+        }
+        .bt-prj,
+        .bt-cv {
+            position: fixed;
+            left: 6rem;
+            top: 1rem;
+        }
+        .bt-illu,
+        .bt-prj-bis {
+            position: fixed;
+            left: 10rem;
+            top: 1rem;
+        }
+    }
+}
+.header-bis {
+    margin-top: 5rem;
+}
+.about-bis {
+    hgroup {
+        text-align: center;
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,193 @@
+@media (max-width: 342px) {
+    .MB {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 270px) {
+    .MB {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        section.about-responsive {
+            margin: 2rem;
+            width: 95%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-self: center;
+            .text-about {
+                width: 150%;
+                margin-left: 1rem;
+            }
+        }
+        section.dl-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            div {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        section.about-prj,
+        section.about-illu {
+            margin-top: 5rem;
+            max-width: 800px;
+        }
+    }
+    footer {
+        nav.link-contact {
+            padding: 1.5rem;
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-around;
+            figure {
+                margin: 0 1rem;
+                svg {
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    main .link-home-page {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    main.cv {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        .cv-bottom {
+            width: 70%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-template: 1fr 1fr / 1fr 1fr; 
+            grid-template-areas: 
+            "tr pr"
+            "tr ho";
+            .pro {
+                grid-area: pr;
+            }
+            .train {
+                grid-area: tr;
+            }
+            .hobbies {
+                grid-area: ho;
+            }
+            section {
+                margin: auto;
+            }
+        }
+    }
+    #prev1,
+    #prev2 {
+        left: 100px;
+    }
+    #next1,
+    #next2 {
+        right: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        nav.nav-bis {
+            button {
+                width: 50px;
+                height: 50px;
+                svg {
+                    width: 1.5rem;
+                }
+            }
+            .bt-home {
+                position: fixed;
+                left: 1.5rem;
+                top: 2rem;
+            }
+            .bt-prj,
+            .bt-cv {
+                position: fixed;
+                left: 1.5rem;
+                top: 6rem;
+            }
+            .bt-illu,
+            .bt-prj-bis {
+                position: fixed;
+                left: 1.5rem;
+                top: 10rem;
+            }
+        }
+        section.dl-container,
+        section.about-responsive {
+            width: 80%;
+            margin-left: 3%;
+        }
+        .dl-container {
+            margin-top: 1rem;
+            padding-left: 16%;
+        }
+        section.about-illu {
+            #QRcode {
+                padding: 2rem;
+            }
+        }
+    }
+    main.cv {
+        margin: auto;
+        max-width: 80%;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 20% 1fr;
+        grid-template-areas: 
+            "lg lg lg"
+            "s . sk"
+            "t t t"
+            "p h h";
+        gap: 1rem;
+    }
+    main.cv .languages {
+        grid-area: lg;
+        width: 70%;
+        margin: 3rem auto;
+    }
+    main.cv .skills {
+        grid-area: s;
+    }
+    main.cv .soft-skills {
+        grid-area: sk;
+    }
+    main.cv .pro {
+        grid-area: p;
+    }
+    main.cv .train {
+        grid-area: t;
+    }
+    main.cv .hobbies {
+        grid-area: h;
+    }
+    main.cv section {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    main.cv section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 0;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        li {
+            max-width: 300px;
+        }
+    }
+}

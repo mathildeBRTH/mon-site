@@ -1,0 +1,50 @@
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: vars.$primary-color;
+    position: fixed;
+    border: 2px solid vars.$secondary-color;
+}
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 10px vars.$secondary-color;
+}
+/* ___fr/en button___ */
+#language-toggle {
+    top: 10px;
+    right: 10px;
+    color: vars.$secondary-color;
+    font-size: 1.25rem;
+}
+/* ___light/dark theme button___ */
+#theme-switch {
+    top: 55px;
+    right: 10px;
+    svg {
+        fill: vars.$secondary-color;
+    }
+}
+/* ___patch-preview button___ */
+#patch-preview {
+    top: 100px;
+    right: 10px;
+    svg {
+        fill: vars.$secondary-color;
+    }
+}
+/* switch svg */
+#theme-switch svg:last-child {
+    display: none;
+}
+.lightmode #theme-switch svg:first-child {
+    display: none;
+}
+.lightmode #theme-switch svg:last-child {
+    display: block;
+}

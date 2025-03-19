@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Nunito";
+    src: url(./contents/fonts/Nunito-Regular.ttf);
+}
+$primary-color: #260933;
+$secondary-color: #C9A7D8;
+$alt-color: #D62E2A;
+$text-color: white;
+.lightmode {
+    --primary-color: #e1ceeb;
+    --secondary-color: #400e57;
+    --alt-color: #D62E2A;
+    --text-color: black;
+}

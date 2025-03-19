@@ -1,0 +1,30 @@
+main {
+    .link-home-page {
+        margin: auto;
+        figure {
+            margin-top: 3rem;
+            position: relative;
+            width: 15rem;
+            height: 15rem;
+            svg {
+                width: 7rem;
+                height: auto;
+                fill: vars.$secondary-color;
+                margin: 2rem;
+            }
+            figcaption {
+                display: none;
+            }
+        }
+        figure:hover {
+            cursor: pointer;
+            scale: 1.1;
+            box-shadow: 0 0 10px vars.$secondary-color;
+            figcaption {
+                display: inline-block;
+                position: absolute;
+                bottom: -2rem;
+            }
+        }
+    }
+}
