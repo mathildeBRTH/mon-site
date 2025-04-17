@@ -26,6 +26,20 @@ function updateTexts(texts) {
     'up-btn': texts.upButton
   };
   
+  // MAJ des aria-label pour le liens du footer
+  const footerLinks = {
+    'email-link': texts.emailLabel,
+    'github-link': texts.githubLabel,
+    'codepen-link': texts.codepenLabel,
+    'linkedin-link': texts.linkedinLabel,
+    'instagram-link': texts.instagramLabel
+  };
+
+  Object.entries(footerLinks).forEach(([id, label]) => {
+      const link = document.getElementById(id);
+      if(link) link.setAttribute('aria-label', label);
+  });
+  
   Object.entries(buttonsToUpdate).forEach(([id, value]) => {
     const element = document.getElementById(id);
     if(element) element.setAttribute('aria-label', value);
