@@ -50,5 +50,8 @@
     "githubLabel": "GitHub profile (new window)",
     "codepenLabel": "CodePen profile (new window)",
     "linkedinLabel": "LinkedIn profile (new window)",
-    "instagramLabel": "Instagram profile (new window)"
+    "instagramLabel": "Instagram profile (new window)",
+    "cvLink": "Go to Curriculum Vitae",
+    "projectsLink": "View projects portfolio",
+    "illustrationsLink": "Browse illustrations"
 }
