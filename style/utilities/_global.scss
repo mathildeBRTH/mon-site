@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: vars.$primary-color;
     /* ___fonts___ */
-    font-family: "Nunito";
+    font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: vars.$secondary-color;
     font-size: 1.1rem;
     h3 {
