@@ -40,5 +40,10 @@
     "website" : "Websites",
     "play" : "Playground",
     "illustrator" : "Illustrator",
-    "aboutIllu" : "I’m Mathilde, aka Nymphose: a self-taught artist, pencil in hand since forever, and creator of universes straddling the line between dreamlike and the bizarre. I craft characters and atmospheres that are fantastical, horrific, or downright psychedelic.Inspired by comics and diverse artistic movements, I blend hand-drawn sketches with digital touches to breathe life into emotions, stories, or simply… what disturbs and fascinates. Today, I create out of passion — tomorrow, perhaps for your project or my own graphic novel. Curious? Scan the QR code (or click!) to dive into my Instagram world!"
+    "aboutIllu" : "I’m Mathilde, aka Nymphose: a self-taught artist, pencil in hand since forever, and creator of universes straddling the line between dreamlike and the bizarre. I craft characters and atmospheres that are fantastical, horrific, or downright psychedelic.Inspired by comics and diverse artistic movements, I blend hand-drawn sketches with digital touches to breathe life into emotions, stories, or simply… what disturbs and fascinates. Today, I create out of passion — tomorrow, perhaps for your project or my own graphic novel. Curious? Scan the QR code (or click!) to dive into my Instagram world!",
+    "languageToggle": "Passer en Français",
+    "themeSwitchLight": "Enable light mode",
+    "themeSwitchDark": "Enable dark mode", 
+    "patchPreview": "View patch preview (PDF)",
+    "upButton": "Back to top"
 }
