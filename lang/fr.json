@@ -45,5 +45,10 @@
     "themeSwitchLight": "Activer le mode clair",
     "themeSwitchDark": "Activer le mode sombre",
     "patchPreview": "Aperçu des patchs (PDF)",
-    "upButton": "Remonter en haut de la page"
+    "upButton": "Remonter en haut de la page",
+    "emailLabel": "Envoyer un email (nouvelle fenêtre)",
+    "githubLabel": "Profil GitHub (nouvelle fenêtre)",
+    "codepenLabel": "Profil CodePen (nouvelle fenêtre)", 
+    "linkedinLabel": "Profil LinkedIn (nouvelle fenêtre)",
+    "instagramLabel": "Profil Instagram (nouvelle fenêtre)"
 }
