@@ -18,7 +18,21 @@ async function loadLanguage(lang) {
 
 // Fonction pour mettre à jour les textes de la page
 function updateTexts(texts) {
-  const elements = ['dev', 'about', 'projectH', 'languages', 'skills', 'enCv', 'office', 'softSkills', 'workT', 'crea', 'obsv', 'minu', 'bene', 'pro', 'job', 'jobSkill', 'jobPlace', 'train', 'DWWM', 'online', 'clas', 'passerelle', 'l2', 'logic', 'ub', 'bac', 'spe', 'school', 'hobbies', 'draw', 'art', 'internet', 'philo', 'puzzle', 'game', 'dlCV', 'dlCL', 'dlRL', 'website', 'play', 'illustrator', 'aboutIllu' ];
+  // MAJ des aria-label des boutons
+  const buttonsToUpdate = {
+    'language-toggle': texts.languageToggle,
+    'theme-switch': lightmode === 'active' ? texts.themeSwitchDark : texts.themeSwitchLight,
+    'patch-preview': texts.patchPreview,
+    'up-btn': texts.upButton
+  };
+  
+  Object.entries(buttonsToUpdate).forEach(([id, value]) => {
+    const element = document.getElementById(id);
+    if(element) element.setAttribute('aria-label', value);
+  });
+
+  // MAJ des textes visibles
+  const elements = ['dev', 'about', 'projectH', 'languages', 'skills', 'enCv', 'office', 'softSkills', 'workT', 'crea', 'obsv', 'minu', 'bene', 'pro', 'job', 'jobSkill', 'jobPlace', 'train', 'DWWM', 'online', 'clas', 'passerelle', 'l2', 'logic', 'ub', 'bac', 'spe', 'school', 'hobbies', 'draw', 'art', 'internet', 'philo', 'puzzle', 'game', 'dlCV', 'dlCL', 'dlRL', 'website', 'play', 'illustrator', 'aboutIllu', 'languageToggle', 'themeSwitchLight', 'themeSwitchDark', 'patchPreview', 'upButton' ];
   elements.forEach(id => {
     const element = document.getElementById(id);
     if (element) {
@@ -99,7 +113,13 @@ if(lightmode === "active") enableLightmode()
 
 themeSwitch.addEventListener("click", () => {
     lightmode = localStorage.getItem('lightmode')
-    lightmode !== "active" ? enableLightmode() : disableLightmode()
+    if(lightmode !== "active") {
+      enableLightmode();
+      themeSwitch.setAttribute('aria-label', texts.themeSwitchDark); // Utilisez votre objet texts ou récupérez-le depuis les JSON
+  } else {
+      disableLightmode();
+      themeSwitch.setAttribute('aria-label', texts.themeSwitchLight);
+  }
 });
 
 // _________pic on click_______
