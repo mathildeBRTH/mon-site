@@ -18,6 +18,31 @@ async function loadLanguage(lang) {
 
 // Fonction pour mettre à jour les textes de la page
 function updateTexts(texts) {
+  // MAJ des textes visibles
+  const elements = ['dev', 'about', 'projectH', 'languages', 'skills', 'enCv', 'office', 'softSkills', 'workT', 'crea', 'obsv', 'minu', 'bene', 'pro', 'job', 'jobSkill', 'jobPlace', 'train', 'DWWM', 'online', 'clas', 'passerelle', 'l2', 'logic', 'ub', 'bac', 'spe', 'school', 'hobbies', 'draw', 'art', 'internet', 'philo', 'puzzle', 'game', 'dlCV', 'dlCL', 'dlRL', 'website', 'play', 'illustrator', 'aboutIllu', 'languageToggle', 'themeSwitchLight', 'themeSwitchDark', 'patchPreview', 'upButton', 'cvLink', 'projectsLink', 'illustrationsLink' ];
+  elements.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = texts[id]; // Met à jour uniquement si l'élément existe
+    }
+  })
+
+  // MAJ des liens de navigation du main
+  const mainLinks = {
+    'cv-link': texts.cvLink,
+    'projects-link': texts.projectsLink,
+    'illustrations-link': texts.illustrationsLink
+  };
+
+  Object.entries(mainLinks).forEach(([id, label]) => {
+      const link = document.getElementById(id);
+      if(link) {
+          link.setAttribute('aria-label', label);
+          // Si nécessaire pour le hover
+          link.setAttribute('title', label); 
+      }
+  });
+  
   // MAJ des aria-label des boutons
   const buttonsToUpdate = {
     'language-toggle': texts.languageToggle,
@@ -44,15 +69,6 @@ function updateTexts(texts) {
     const element = document.getElementById(id);
     if(element) element.setAttribute('aria-label', value);
   });
-
-  // MAJ des textes visibles
-  const elements = ['dev', 'about', 'projectH', 'languages', 'skills', 'enCv', 'office', 'softSkills', 'workT', 'crea', 'obsv', 'minu', 'bene', 'pro', 'job', 'jobSkill', 'jobPlace', 'train', 'DWWM', 'online', 'clas', 'passerelle', 'l2', 'logic', 'ub', 'bac', 'spe', 'school', 'hobbies', 'draw', 'art', 'internet', 'philo', 'puzzle', 'game', 'dlCV', 'dlCL', 'dlRL', 'website', 'play', 'illustrator', 'aboutIllu', 'languageToggle', 'themeSwitchLight', 'themeSwitchDark', 'patchPreview', 'upButton' ];
-  elements.forEach(id => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.textContent = texts[id]; // Met à jour uniquement si l'élément existe
-    }
-  })
 };
 
 // Fonction pour mettre à jour les liens des PDF en fonction de la langue
