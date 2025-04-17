@@ -45,5 +45,10 @@
     "themeSwitchLight": "Enable light mode",
     "themeSwitchDark": "Enable dark mode", 
     "patchPreview": "View patch preview (PDF)",
-    "upButton": "Back to top"
+    "upButton": "Back to top",
+    "emailLabel": "Send email (new window)",
+    "githubLabel": "GitHub profile (new window)",
+    "codepenLabel": "CodePen profile (new window)",
+    "linkedinLabel": "LinkedIn profile (new window)",
+    "instagramLabel": "Instagram profile (new window)"
 }
