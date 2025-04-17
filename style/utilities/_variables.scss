@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Nunito";
     src: url(./contents/fonts/Nunito-Regular.ttf);
+    /* swap : permet d'afficher immédiatement le texte avec une police de substitution pendant que la police personnalisée se charge (améliore les perfomances) */
+    font-display: swap;
 }
 $primary-color: #260933;
 $secondary-color: #C9A7D8;
