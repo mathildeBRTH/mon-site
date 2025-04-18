@@ -20,6 +20,9 @@
         cursor: pointer;
     }
 }
+#courousel3 .carousel-item {
+    max-width: none;
+}
 .carousel-button {
     position: absolute;
     top: 50%;
